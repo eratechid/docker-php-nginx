@@ -1,5 +1,5 @@
 FROM alpine:3.9
-LABEL Maintainer="Tim de Pater <code@trafex.nl>" \
+LABEL Maintainer="eratechid" \
       Description="Lightweight container with Nginx 1.14 & PHP-FPM 7.2 based on Alpine Linux."
 
 # Install packages
@@ -31,7 +31,7 @@ USER nobody
 
 # Add application
 WORKDIR /var/www/html
-COPY --chown=nobody src/ /var/www/html/
+#COPY --chown=nobody src/ /var/www/html/
 
 # Expose the port nginx is reachable on
 EXPOSE 8080
