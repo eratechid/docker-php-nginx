@@ -12,7 +12,7 @@ RUN apk update && \
     php7 php7-phar php7-curl php7-fpm php7-json php7-zlib php7-gd \
     php7-xml php7-dom php7-ctype php7-opcache php7-zip php7-iconv \
     php7-pdo php7-pdo_mysql php7-mysqli php7-mbstring php7-session \
-    php7-mcrypt php7-openssl php7-sockets php7-posix 
+    php7-mcrypt php7-openssl php7-sockets php7-posix php7-tokenizer
 
 RUN ln -sf "/usr/share/zoneinfo/$TZ" /etc/localtime && \
 echo "$TZ" > /etc/timezone && date
